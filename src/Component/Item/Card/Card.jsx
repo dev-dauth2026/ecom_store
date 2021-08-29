@@ -7,6 +7,7 @@ const Card = (props) => {
             <figure>
                 <img src={props.img} alt='props.img' title='props.img' />
             </figure>
+            <small> Category: {props.category} </small>
             <div className='card_body'>
                 <strong className='card-title'> {props.title} </strong>
                 <strong> ${props.price} </strong>

@@ -13,6 +13,10 @@
   background-color: yellow;
   
 }
+nav .nav_head .form{
+  height: 25%;
+  
+}
 .navbar .nav_brand .nav_item{
   color:green;
   text-decoration: none;
@@ -30,10 +34,14 @@
   color:black;
   text-decoration: none;
   margin-right: 2rem;
-
+}
+.navbar .nav .nav_item:focus{
+  outline: none;
 }
 .navbar .nav .nav_item:hover{
   color:red;
+  cursor: pointer;
+  outline: none;
 }
 .item{
   display: flex;
@@ -63,9 +71,12 @@
 .card .card_body{
   display: flex;
   justify-content: space-between;
-  margin-bottom:2px;
   padding: 0 3px;
   font-size: 12px;
+}
+.card small{
+  font-size: 10px;
+  padding:0 3px;
 }
 .card .card_button{
   display: flex;
