@@ -17,6 +17,17 @@ nav .nav_head .form{
   height: 25%;
   
 }
+nav .nav_head ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .nav_head ul li .nav_button{
+  background-color: transparent;
+  border: none;
+  margin-right: 3rem;
+  text-align: center;
+}
 .navbar .nav_brand .nav_item{
   color:green;
   text-decoration: none;
@@ -95,7 +106,10 @@ nav .nav_head .form{
   background-color: green;
   color: white;
 }
-
+.card .card_button p{
+  display: flex;
+  align-items: center;
+}
 footer{
   margin: 5rem;
   display: flex;

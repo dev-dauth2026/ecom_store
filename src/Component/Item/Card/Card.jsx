@@ -1,21 +1,19 @@
 import React from 'react'
 import AddShoppingCartIcon from '@material-ui/icons/AddShoppingCart';
-const Card = (props) => {
+const Card = ({img,title, category,price}) => {
     return (
         <>
         <div className='card'>
             <figure>
-                <img src={props.img} alt='props.img' title='props.img' />
+                <img src={img} alt={title} title={title} />
             </figure>
-            <small> Category: {props.category} </small>
+            <small> Category: {category} </small>
             <div className='card_body'>
-                <strong className='card-title'> {props.title} </strong>
-                <strong> ${props.price} </strong>
+                <strong className='card-title'> {title} </strong>
+                <strong> ${price} </strong>
             </div>
-            <div className='card_button'>
-            <AddShoppingCartIcon/>
-            <a >  Add to Cart</a>
-            </div>
+            <button className='card_button'>  <AddShoppingCartIcon/> Add to Cart</button>
+            
         </div>
 
         

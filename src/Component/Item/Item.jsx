@@ -1,14 +1,15 @@
 import React from 'react'
 import Card from './Card/Card'
-const Item = (props) => {
+const Item = ({item}) => {
     return (
         <div className='item'>
         {
-            props.item.map((elem)=>{
-                const {img,title,category,price}=elem
-                return <Card  img={img} title={title} category={category} price={price} />
+            item.map((elem)=>{
+                const {id,img,title,category,price}=elem
+                return <Card key={id} img={img} title={title} category={category} price={price} />
             })
         }
+    
         </div>
     )
 }

@@ -20,5 +20,12 @@ const Collection=[
         category:'Men',
         price:109.99,
     },
+    {
+        id:4,
+        img:'../Images/men_shoes.jpg',
+        title:'Kid shoes',
+        category:'Kid',
+        price:109.99,
+    },
 ]
 export default Collection;
